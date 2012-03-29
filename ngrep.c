@@ -1045,7 +1045,7 @@ void dump_formatted(unsigned char *data, uint32_t len, uint16_t mindex, uint16_t
         uint8_t should_hilite = (msize && enable_hilite);
            unsigned char *str = data;
              uint8_t hiliting = 0;
-                uint8_t width = show_hex ? 16 : (ws_col-5);
+               uint32_t width = show_hex ? 16 : (ws_col-5);
                    uint32_t i = 0,
                             j = 0;
 
